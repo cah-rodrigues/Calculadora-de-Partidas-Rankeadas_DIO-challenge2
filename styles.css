@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+:root{
+    --color-1: #2A095F;
+    --color-2: #3D02BD;
+    --color-3: #E25BFF;
+    --color-4: #DDB1FF;
+    --color-5: #FBEFFF;
+    --color-6: #000;
+    --color-7: #F3AF19;
+    --color-8: #333;
+    --color-9: #319236;
+
+    --font: "Kode Mono", monospace;
+}
+
+body {
+    background: linear-gradient(var(--color-1), var(--color-3), var(--color-5));
+    color: var(--color-5);
+    font-family: var(--font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: var(--color-2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px var(--color-8);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    color: var(--color-5);
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--color-5);
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--color-8);
+    background-color: var(--color-4);
+    color: var(--color-6);
+    font-family: var(--font);
+}
+
+button {
+    background-color: var(--color-7);
+    border: none;
+    padding: 10px 20px;
+    color: var(--color-1);
+    font-family: var(--font);
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: var(--color-9);
+    color: var(--color-5);
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: var(--color-5);
+}

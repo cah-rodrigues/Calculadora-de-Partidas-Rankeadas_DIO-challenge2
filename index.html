@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Ranqueamento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Partidas Rankeadas</h1>
+        <form id="rankingForm">
+            <div class="form-group">
+                <label for="nickname">Digite seu Nickname:</label>
+                <input type="text" id="nickname" required>
+            </div>
+            <div class="form-group">
+                <label for="matches">Quantas partidas você jogou?</label>
+                <input type="number" id="matches" required>
+            </div>
+            <div class="form-group">
+                <label for="victories">Quantas vezes você venceu?</label>
+                <input type="number" id="victories" required>
+            </div>
+            <div class="form-group">
+                <label for="defeats">Quantas vezes você perdeu?</label>
+                <input type="number" id="defeats" required>
+            </div>
+            <button type="button" onclick="calculateRank()">Calcular Rank</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
